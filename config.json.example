@@ -1,0 +1,28 @@
+{
+  "cifre_platform": {
+    "email": "your_email@domain.com",
+    "password": "your_password",
+    "disciplines": ["DSPT08", "DSPT09"],
+    "min_start_date": "2026-08-31"
+  },
+  "safran": {
+    "allowed_tags": ["IT", "Mathematics and algorithms", "Data", "Architecture and systems engineering"]
+  },
+  "orange": {
+    "title_must_contain": ["PhD", "Thèse", "Thése", "These", "Doctorat"]
+  },
+  "cea": {
+    "keyword": "these",
+    "contract": "CDD"
+  },
+  "inria": {
+    "keyword": "CIFRE"
+  },
+  "skip_companies_on_aggregators": [
+    "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA"
+  ],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5000
+  }
+}
