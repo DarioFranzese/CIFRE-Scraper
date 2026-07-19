@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIFRE PhD Tracker</title>
+    <meta name="description" content="Track and manage CIFRE PhD offer applications across multiple French job platforms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-left">
+            <h1 class="logo">
+                <span class="logo-icon">🎓</span>
+                CIFRE PhD Tracker
+            </h1>
+        </div>
+        <div class="header-right">
+            <div class="stats" id="stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-new">0</span>
+                    <span class="stat-label">New</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-applied">0</span>
+                    <span class="stat-label">Applied</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-total">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+            </div>
+            <button class="btn btn-refresh" id="btn-refresh" onclick="triggerRefresh()">
+                <svg class="refresh-icon" id="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 4v6h-6M1 20v-6h6"/>
+                    <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                </svg>
+                <span id="refresh-text">Refresh</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Last scrape info -->
+    <div class="scrape-info" id="scrape-info"></div>
+
+    <!-- Filters -->
+    <div class="filters" id="filters">
+        <div class="filter-group">
+            <label for="filter-status">Status</label>
+            <select id="filter-status" onchange="applyFilters()">
+                <option value="active" selected>Active (New + Seen)</option>
+                <option value="new">New only</option>
+                <option value="applied">Applied</option>
+                <option value="not_interested">Not interested</option>
+                <option value="">All</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="filter-source">Source</label>
+            <select id="filter-source" onchange="applyFilters()">
+                <option value="">All sources</option>
+                <option value="doctorat_gouv">Doctorat.gouv</option>
+                <option value="safran">Safran</option>
+                <option value="airbus">Airbus</option>
+                <option value="renault">Renault</option>
+                <option value="cea">CEA</option>
+                <option value="edf">EDF</option>
+                <option value="orange">Orange</option>
+                <option value="thales">Thales</option>
+                <option value="inria">INRIA</option>
+                <option value="hellowork">HelloWork</option>
+                <option value="linkedin">LinkedIn</option>
+            </select>
+        </div>
+        <div class="filter-group search-group">
+            <label for="filter-search">Search</label>
+            <input type="text" id="filter-search" placeholder="Search title, company, description..." oninput="applyFilters()">
+        </div>
+    </div>
+
+    <!-- Offer count -->
+    <div class="results-bar" id="results-bar">
+        <span id="results-count">Loading...</span>
+    </div>
+
+    <!-- Offers grid -->
+    <main class="offers-grid" id="offers-grid">
+        <!-- Cards rendered by JS -->
+    </main>
+
+    <!-- Empty state -->
+    <div class="empty-state hidden" id="empty-state">
+        <div class="empty-icon">📭</div>
+        <h2>No offers found</h2>
+        <p>Try adjusting your filters or click Refresh to scrape new offers.</p>
+    </div>
+
+    <!-- Loading overlay during refresh -->
+    <div class="refresh-overlay hidden" id="refresh-overlay">
+        <div class="refresh-modal">
+            <div class="spinner"></div>
+            <h3>Scraping in progress...</h3>
+            <p id="refresh-progress">Fetching offers from all sources</p>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast hidden" id="toast"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

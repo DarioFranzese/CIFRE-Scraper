@@ -1,0 +1,83 @@
+Job Description
+
+Contexte et enjeux
+
+Safran Transmission Systems conçoit et fabrique des systèmes de transmission de puissance de forte capacité destinés aux moteurs aéronautiques civils. Dans le cadre des programmes de R&D engagés pour les futures générations de moteurs, l'entreprise développe des solutions toujours plus performantes, fiables et innovantes.
+Au sein de Safran Transmission Systems, le département RGB a pour mission de proposer des innovations technologiques et architecturales et de mener les études associées, notamment dans les domaines de la mécanique, de la thermique et de la lubrification.
+Les engrenages et les roulements représentent des composants critiques des transmissions mécaniques. Soumis à des conditions de fonctionnement sévères (charges élevées, vitesses importantes), ils sont exposés à des risques élevés de dégradation pouvant conduire à des défaillances imprévues. La surveillance de leur état de santé est donc un enjeu majeur afin de garantir la fiabilité et la sécurité des systèmes.
+
+Problématique scientifique
+
+La surveillance vibratoire constitue un levier important de la maintenance prédictive. Basée sur des mesures non intrusives, elle permet de suivre le comportement dynamique des composants et d'identifier, en théorie, leur état de santé à partir de signatures vibratoires caractéristiques.
+Cependant, dans le cas de systèmes compacts et fortement sollicités tels que les réducteurs épicycloïdaux aéronautiques, les méthodes vibratoires classiques atteignent rapidement leurs limites. La superposition de multiples sources d'excitation, les interactions dynamiques complexes entre composants et le masquage des signatures de défauts rendent la détection et la discrimination des endommagements particulièrement délicates, avec un risque accru de fausses alertes et des indicateurs peu robustes.
+
+Objectifs de la thèse CIFRE
+
+Dans ce contexte, Safran Transmission Systems propose une thèse CIFRE visant à lever les verrous scientifiques et techniques liés à l'analyse vibratoire des réducteurs épicycloïdaux. L'objectif est de développer des méthodes avancées de traitement et d'analyse du signal permettant de séparer et caractériser plus finement les différentes sources vibratoires.
+En isolant les contributions propres à chaque composant et leurs signatures spécifiques, ces travaux permettront de réduire les phénomènes d'interférences et de masquage, et d'améliorer la robustesse des indicateurs de santé pour la détection précoce des dégradations, au bénéfice de la maintenance prédictive et de la fiabilité des systèmes aéronautiques.
+
+Job Requirements
+
+• Vous avez un master 2 ou un diplôme d'ingénieur, avec des compétences en mathématiques appliquées ou traitement du signal
+• Des connaissances en mécanique et en dynamique vibratoire seraient fortement appréciées
+• Vous avez eu une première experience de recherche (stage, projet lors de la formation, etc…)
+• Vous avez un intérêt pour l'expérimentation
+• Vous avez des connaissances en programmation (ex : Python, MATLAB)
+• Vous avez un bon niveau d'anglais pour la lecture, la rédaction et la synthèse d'articles scientifiques
+• Vous êtes curieux(se), motivé(e), et vous êtes force de proposition.
+
+But what else? (advantages, specific features, etc.)
+
+Pendant les trois ans de la thèse le/la doctorant/e sera basé pendant 70 % de son temps dans les locaux de Safran Transmission Systems à Villeurbanne (69100) et pendant 30 % de son temps au Laboratoire Vibrations Acoustique (LVA) à Villeurbanne cedex (69621). Des déplacements éventuels pourront être demandés au thésard, principalement vers le site de Safran Transmission Systems à Colombes (92700).
+
+Le/la doctorant/e aura comme responsabilité de :
+• Assister/suivre des essais expérimentaux répondants aux objectifs scientifiques du projet.
+• Participer à la mise au point de protocoles, de méthodologies et d'outils d'analyse.
+• Confronter des résultats d'algorithmes à des résultats expérimentaux.
+• Developper des algorithmes de traitement des données expérimentales pour repondre aux objectifs du projet.
+• Collaborer étroitement avec les équipes académiques et industrielles.
+• Contribuer au suivi et à la coordination des activités du projet avec les équipes industriels et académiques.
+• Préparer des rapports et présentations scientifiques pour les réunions de suivi.
+• Participer à la rédaction de publications scientifiques synthétisant le travail réalisé.
+• Préparer et réaliser des communications en conférences nationales ou internationales.
+• Rédiger un manuscrit de doctorat et le soutenir auprès d'un jury composé d'experts du domaine.
+
+Company Information
+
+Safran is an international high-technology group operating in the fields of aerospace (propulsion, equipment and interiors), space and defense. Its mission is to contribute sustainably to a safer world, where air transport becomes ever more environmentally friendly, comfortable and accessible. Present on every continent, the Group employs 110,000 people and generated €31.3 billion in revenue in 2025. Safran holds, either independently or through partnerships, leading global or European positions in its markets.
+
+Safran was ranked second in the Aerospace & Defense sector in TIME magazine's "World's Best Companies 2025" ranking.
+
+As the heir to a long-standing legacy of aerospace excellence and innovation, Safran Transmission Systems is one of the world leaders in mechanical power transmission systems used on commercial aircraft, business jets and military aircraft. With more than 50,000 products in service, Safran Transmission Systems notably holds an 80% market share in the short- and medium-haul aircraft segment. Supported by more than 2,000 highly skilled and committed employees, its activities cover research and development, design, manufacturing and in-service support. Its teams are mainly located in France and Poland and manage a global network of around one hundred major suppliers. Safran Transmission Systems is driving innovation by developing power transmission systems for the next generation of engines and for the electric and hybrid propulsion of future aircraft
+
+Locate your future workplace
+
+18 boulevard Louis-Seguin 92700
+
+Colombes
+
+Auvergne-Rhône-Alpes FRANCE
+
+ COPY ADDRESS
++
+−
+ Leaflet | © OpenStreetMap contributors
+100,000
+EMPLOYEES WORLDWIDE
+27
+NUMBER OF COUNTRIES WHERE SAFRAN IS LOCATED
+35
+BUSINESS AREA FAMILIES
+Credits
+Follow us
+Digital integrated report
+READ MORE
+Contact us
+Sitemap
+Privacy notice
+Legal notice
+Accessibility: partially compliant (97%)
+FAQ
+Glossary
+Ethics Alert
+Privacy settings

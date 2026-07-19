@@ -1,0 +1,6 @@
+config.json
+data/offers.json
+__pycache__/
+*.pyc
+.venv/
+venv/

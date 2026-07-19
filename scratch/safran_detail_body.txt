@@ -1,0 +1,119 @@
+We value your privacy
+
+We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
+
+Customise
+Reject All
+Accept All
+Necessary
+Functional
+Analytics
+Advertisement
+Uncategorised
+Save My Preferences
+Skip to main content
+SAF 329.5€
++0.12%
+Countries
+Locations
+Companies
+Graphic guidelines
+EN
+Logins
+Open search
+GROUP
+SUSTAINABILITY
+PRODUCTS & SERVICES
+CAREERS
+FINANCE
+NEWS & MEDIA
+Home
+Job openings
+Thèse CIFRE: Modélisation thermo-hydraulique des roulements F/H
+
+Beware of fake recruiters and fraudulent job offers! Safran recruiters will never ask you for personal information such as your bank account details, social security number, or banking information. If you have any doubts, please contact us directly.
+
+Thèse CIFRE: Modélisation thermo-hydraulique des roulements F/H
+Company :
+Safran Aircraft Engines
+Job field :
+Fluid Mechanics
+Location :
+Réau , Ile de France , France
+Contract type :
+CIFRE
+Contract duration :
+Full-time
+Required degree :
+Master Degree
+Required experience :
+First experience
+Professional status :
+Professional, Engineer & Manager
+Spoken language(s) :
+French Fluent
+English Fluent
+# 2026-182736
+APPLY APPLY WITH ONE CLICK ANY QUESTIONS ?
+PUBLISHED 07.17.2026
+Job Description
+
+La thèse se déroulera principalement sur le site du laboratoire LPSC, et en collaboration avec le laboratoire LEGI, tous deux rattachés à l'Université de Grenoble-Alpes. Des périodes d'immersion seront à prévoir à Safran Aircraft Engines, notamment en début et fin de thèse. Ces immersions serviront principalement à se familiariser avec les problématiques associées au dimensionnement des roulements.
+Cette thèse s'inscrit dans le cadre d'une feuille de route pluriannuelle visant à l'amélioration des méthodes et outils pour la modélisation et la conception du système de lubrification. Sur les turboréacteurs, les paliers (ou roulements) sont lubrifiés et refroidis par circulation d'huile. L'huile s'évacuant du palier est contenue dans une enceinte, récupérée, puis réinjectée dans le système de lubrification. Pour ses futurs moteurs, Safran Aircraft Engines cherche à optimiser le débit d'huile du système, une réduction de ce débit permettant des gains sur la taille et la masse de différents équipements (réservoir, échangeurs de chaleur…), ainsi qu'une réduction des pertes mécaniques. Mais cet objectif implique également une hausse de la température des éléments du roulement, et nécessite donc de se doter d'outils de prédiction de la température de l'huile et des composants du roulement.
+Ce sujet de thèse porte sur le développement d'une modélisation CFD diphasique, permettant de simuler l'écoulement air/huile interne au palier, couplée à une résolution de la thermique du solide. Le déplacement des éléments du palier sera pris en compte par adaptation de maillage, via un formalisme ALE (Arbitrary Lagrangian Eulerian). Le code de calcul utilisé sera YALES2, déjà éprouvé pour la modélisation des systèmes d'injection carburant aéronautiques. Des premiers travaux ont été engagés au sein du groupe Safran pour tester la capacité de ce code à modéliser la circulation de l'huile au sein du roulement.
+Les travaux de cette thèse porteront sur:
+1. Le développement dans YALES2 de modèles permettant de limiter la résolution des maillages (par exemple, modèle de paroi pour la thermique, ou modélisation d'un film liquide mince)
+2. L'étude des simplifications géométriques possibles, permettant d'optimiser les temps de restitutions des simulations
+3. La validation de la méthodologie de calcul, par comparaison à des données expérimentales obtenues sur des roulements industriels
+
+Job Requirements
+
+Ingénieur et/ou master dans le domaine de l'énergétique, aéronautique, mécanique des fluides, avec de solides connaissances en aérothermique et CFD.
+Sens pratique et intérêt pour le travail de modélisation
+Capacité pour la modélisation et l'analyse physique des données
+Aptitude pour la programmation (idéalement en python/fortran).
+Maîtrise de l'anglais écrit et parlé.
+Des connaissances théoriques sur les écoulements diphasiques, ou une première expérience avec la simulation LES voire avec le code YALES2 sont un plus.
+
+But what else? (advantages, specific features, etc.)
+
+Au sein de la Direction Systèmes Propulsifs de Safran Aircraft Engines, le département Thermique, Fluides et Agressions prépare les prochaines générations d'architectures moteurs / ensembles propulsifs ainsi que la montée en maturité des technologies clés de demain. En nous rejoignant, vous aurez l'opportunité de comprendre le fonctionnement global du système propulsif et les enjeux liés à la conception de ses différents systèmes au sein d'une équipe pluridisciplinaire.
+
+Quelques atouts du site de Villaroche :
+• Un des principaux sites industriels d'Ile-de-France (plus de 80 hectares)
+• Présence sur un même lieu des activités de montage moteur, de projets de recherche avancée, de moyens d'essais, et de conception de haut niveau
+• Environnement de travail agréable
+• Accès à une salle de sport, à une conciergerie
+
+Et pour en savoir plus sur Safran Aircraft Engines :
+https://www.youtube.com/watch?v=denNvWLSUDM
+
+Company Information
+
+Safran is an international high-technology group operating in the fields of aerospace (propulsion, equipment and interiors), space and defense. Its mission is to contribute sustainably to a safer world, where air transport becomes ever more environmentally friendly, comfortable and accessible. Present on every continent, the Group employs 110,000 people and generated €31.3 billion in revenue in 2025. Safran holds, either independently or through partnerships, leading global or European positions in its markets.
+
+Safran was ranked second in the Aerospace & Defense sector in TIME magazine's ""World's Best Companies 2025"" ranking.
+
+Safran Aircraft Engines designs, manufactures and markets, either independently or in partnership, civil and military aircraft engines delivering the highest levels of performance, reliability and environmental responsibility. Through CFM International*, the company is notably the world leader in propulsion systems for short- and medium-haul commercial aircraft.
+
+*CFM International is a 50/50 joint venture between Safran Aircraft Engines and GE Aerospace.
+
+100,000
+EMPLOYEES WORLDWIDE
+27
+NUMBER OF COUNTRIES WHERE SAFRAN IS LOCATED
+35
+BUSINESS AREA FAMILIES
+Credits
+Follow us
+Digital integrated report
+READ MORE
+Contact us
+Sitemap
+Privacy notice
+Legal notice
+Accessibility: partially compliant (97%)
+FAQ
+Glossary
+Ethics Alert
+Privacy settings

@@ -1,0 +1,122 @@
+Content
+Haut de page
+Main Menu
+Footer
+Recrute
+Help & Contact
+EN
+My account
+Strong values
+Your career
+Being a student at EDF
+Our offers
+
+Offer details
+
+Doctorant CIFRE - Ségrégation et précipitation aux joints de grains dans les pièces forgées F/H (FRA-REC-2026-27048)
+
+Posted on 11/07/2026
+
+Main characteristics of the job offer
+Contract type:
+Thesis
+Level of education:
+Master, DEA, DESS
+Experience:
+Beginner
+Specializations:
+Mechanics & Materials / Valves / Boilermaker
+Salary (gross) :
+Between 38000€ and 40500€ per year
+Country / Region:
+France / Ile-de-France
+Department:
+Hauts-de-Seine (92)
+City:
+La Défense
+Apply
+Description of the offer
+
+La fiabilité mécanique des pièces épaisses en acier faiblement allié est essentielle pour la sûreté des équipements nucléaires sous pression, notamment les cuves de réacteurs. Toutefois, la présence de zones méso-ségrégées, issues de la solidification, entraîne d'importantes variations locales de composition chimique (Mo, Mn, Si, P) qui ne sont pas éliminées par le forgeage ou les traitements thermiques. Ces hétérogénéités augmentent les risques de fragilisation intergranulaire, en particulier après les traitements thermiques tels que le revenu ou le détensionnement.
+
+Il est donc essentiel de bien comprendre les mécanismes de redistribution de solutés, de précipitation (cémentite, carbures de Mo, M23C6 …) et de ségrégation des éléments aux anciens joints de grains austénitiques (PAGB) dans ces zones, et leurs éventuelles interactions. Ces phénomènes, encore mal connus, conditionnent les propriétés mécaniques des aciers à l’état dit « de réception », et leur évolution lors du vieillissement thermique en service.
+
+Cette thèse, réalisée avec le laboratoire IM2NP à Marseille, vise donc à clarifier les mécanismes de ségrégation et de précipitation aux joints de grains, de l’échelle méso-structurale à l’échelle atomique. L’étude sera menée sur des matériaux industriels présentant des zones méso-ségrégées. On accordera une attention toute particulière à l’évolution des phénomènes au cours des traitements thermiques (état d’origine issu de la trempe, puis après les traitements de revenu et de détensionnement post-soudage) et à l’impact des gradients locaux de composition à différentes échelles (micro-méso-ségrégation et précipitation). Différentes techniques avancées seront utilisées pour analyser la microstructure et la chimie à plusieurs échelles. Le SEM couplé à l’EBSD/TKD servira à déterminer la microstructure et la nature des joints de grains, tandis que la sonde atomique tomographique (SAT) permettra de quantifier précisément la ségrégation et la précipitation sur les défauts structuraux. Ces approches seront complétées par le TEM/EDX, la spectroscopie Auger et la WDX. Un couplage TEM/SAT assurera une corrélation directe entre structure atomique et composition chimique des défauts dans ces zones. Les résultats expérimentaux seront soutenus par une approche de modélisation thermocinétique incorporant la compréhension des mécanismes de ségrégation et de précipitation. Le travail de modélisation s’appuiera sur un modèle de ségrégation - diffusion développé à l’IM2NP, auquel le couplage avec la précipitation devra être ajouté.
+
+Desired profile
+
+Bac + 5, Ingénieur.e ou Master recherche en science des matériaux
+
+Excellentes bases en caractérisation des matériaux et thermodynamique, bon esprit de synthèse, autonomie, rigueur scientifique, maîtrise de la programmation en Python; intérêt marqué pour l'expérimental, les applications industrielles et le secteur du nucléaire.
+
+Apply
+These offers might interest you:
+Doctorant CIFRE - Modélisation mécanique de la variabilité de la résilience dans les aciers F/H
+
+Thesis
+
+France
+
+Hauts-de-Seine (92)
+
+Design Engineering
+
+Doctorant CIFRE - Modélisation mécanique de la variabilité de la résilience dans les aciers F/H
+Stage – Ingénieur Modélisation d'un échangeur de chaleur sous Amesim F/H
+
+Internship
+
+France
+
+Hauts-de-Seine (92)
+
+Design Engineering
+
+Stage – Ingénieur Modélisation d'un échangeur de chaleur sous Amesim F/H
+Ingénieur.e Matériaux F/H
+
+Permanent contract
+
+France
+
+Hauts-de-Seine (92)
+
+Design Engineering
+
+Ingénieur.e Matériaux F/H
+You are here :
+EDF join us
+Applicant Area
+See the offers
+Doctorant CIFRE - Ségrégation et pr...
+Top of the page
+Recrute
+Edf.fr
+Sitemap
+Personal data
+Cookies
+Legal notices
+Credits
+Accessibility partially compliant (90%)
+
+©2026 EDF - Energy is our future, save it !
+
+Continue without accepting
+
+A little word on cookies
+
+To improve your experience, EDF and its 13 partenaires store and/or access information on your terminal (cookies and other trackers), and process personal data (e.g.: pages consulted), either with your consent, whenever you navigate on the edf websites.
+
+These technologies enable us to draw up usage statistics and customise your experience (services tailored to your centres of interest, personalised offers, adverts and content, advert and content performance measurement, audience data and product development) on Internet or by direct communications (email, text, etc.).
+
+Certain audience measurement cookies are exempt from consent requirements. Find out more or opt out.
+
+Your choice to either accept or refuse cookies will not affect your navigation on the website, nor the number of adverts that will be displayed to you on other websites. However, if you refuse the storage of cookies, the partners with which EDF works will not be able to display customised EDF adverts according to your profile.
+
+The information gathered through the cookies and other trackers may be linked with those processed on your other devices and/or with the personal data gathered by our partners, according to the choices you expressed elsewhere.
+
+You can either accept all these processing operations concerning your personal data or oppose them. Moreover, the “Personalise” button enables you to individually configure each processing purpose for the cookies and trackers you wish to accept. Your choices will be memorised for a duration of 6 months, following which this message will be displayed to you again.
+
+You can modify your choices at any time by clicking on the “cookies” link at the bottom of the page.
+
+PersonalizeAccept
