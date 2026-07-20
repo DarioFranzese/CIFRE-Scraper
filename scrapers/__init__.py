@@ -22,5 +22,5 @@ ALL_SCRAPERS = [
     AirbusScraper,
     RenaultScraper,
     EDFScraper,
-    LinkedInScraper,
+#    LinkedInScraper,
 ]
