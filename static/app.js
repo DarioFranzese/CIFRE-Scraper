@@ -20,7 +20,6 @@ const SOURCE_LABELS = {
     thales: 'Thales',
     inria: 'INRIA',
     hellowork: 'HelloWork',
-    linkedin: 'LinkedIn',
 };
 
 let allOffers = [];

@@ -9,7 +9,6 @@ from scrapers.safran import SafranScraper
 from scrapers.airbus import AirbusScraper
 from scrapers.renault import RenaultScraper
 from scrapers.edf import EDFScraper
-from scrapers.linkedin import LinkedInScraper
 
 ALL_SCRAPERS = [
     OrangeScraper,
@@ -22,5 +21,5 @@ ALL_SCRAPERS = [
     AirbusScraper,
     RenaultScraper,
     EDFScraper,
-#    LinkedInScraper,
 ]
+

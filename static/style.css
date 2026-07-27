@@ -532,7 +532,6 @@ body::before {
 .offer-card[data-source="thales"]         { --card-accent: #4A148C; --badge-bg: rgba(74, 20, 140, 0.2); --badge-color: #a78bfa; }
 .offer-card[data-source="inria"]          { --card-accent: #E63312; --badge-bg: rgba(230, 51, 18, 0.15); --badge-color: #f87171; }
 .offer-card[data-source="hellowork"]      { --card-accent: #1F2937; --badge-bg: rgba(31, 41, 55, 0.3); --badge-color: #9ca3af; }
-.offer-card[data-source="linkedin"]       { --card-accent: #0A66C2; --badge-bg: rgba(10, 102, 194, 0.15); --badge-color: #38bdf8; }
 
 /* --- Empty State --- */
 .empty-state {
