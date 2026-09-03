@@ -524,6 +524,7 @@ body::before {
 /* --- Source-specific accent colors --- */
 .offer-card[data-source="doctorat_gouv"]  { --card-accent: #000091; --badge-bg: rgba(0, 0, 145, 0.2); --badge-color: #6366f1; }
 .offer-card[data-source="safran"]         { --card-accent: #0073CF; --badge-bg: rgba(0, 115, 207, 0.15); --badge-color: #38bdf8; }
+.offer-card[data-source="aubertduval"]    { --card-accent: #ED1C24; --badge-bg: rgba(237, 28, 36, 0.15); --badge-color: #ef4444; }
 .offer-card[data-source="airbus"]         { --card-accent: #00205B; --badge-bg: rgba(0, 32, 91, 0.25); --badge-color: #60a5fa; }
 .offer-card[data-source="renault"]        { --card-accent: #FFCC00; --badge-bg: rgba(255, 204, 0, 0.12); --badge-color: #facc15; }
 .offer-card[data-source="cea"]            { --card-accent: #E30613; --badge-bg: rgba(227, 6, 19, 0.15); --badge-color: #f87171; }
@@ -532,6 +533,7 @@ body::before {
 .offer-card[data-source="thales"]         { --card-accent: #4A148C; --badge-bg: rgba(74, 20, 140, 0.2); --badge-color: #a78bfa; }
 .offer-card[data-source="inria"]          { --card-accent: #E63312; --badge-bg: rgba(230, 51, 18, 0.15); --badge-color: #f87171; }
 .offer-card[data-source="hellowork"]      { --card-accent: #1F2937; --badge-bg: rgba(31, 41, 55, 0.3); --badge-color: #9ca3af; }
+.offer-card[data-source="francetravail"]  { --card-accent: #0C419A; --badge-bg: rgba(12, 65, 154, 0.2); --badge-color: #60a5fa; }
 
 /* --- Empty State --- */
 .empty-state {
@@ -606,34 +608,43 @@ body::before {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    padding: 14px 24px;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-subtle);
+    padding: 14px 22px;
+    background: rgba(18, 18, 30, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-hover);
     border-radius: var(--radius-md);
     color: var(--text-primary);
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), 0 0 20px rgba(0, 0, 0, 0.5);
     z-index: 2000;
-    animation: slideIn 0.3s ease;
+    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .toast.success {
-    border-left: 3px solid var(--accent-green);
+    border-left: 4px solid var(--accent-green);
 }
 
 .toast.error {
-    border-left: 3px solid var(--accent-red);
+    border-left: 4px solid var(--accent-red);
+}
+
+.toast.info {
+    border-left: 4px solid var(--accent-blue);
 }
 
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px) scale(0.95);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 

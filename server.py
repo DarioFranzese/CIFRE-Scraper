@@ -3,6 +3,7 @@
 import json
 import os
 import threading
+import webbrowser
 
 from flask import Flask, jsonify, request, send_from_directory
 
@@ -14,6 +15,30 @@ app = Flask(__name__, static_folder="static")
 _scrape_lock = threading.Lock()
 _scrape_running = False
 _scrape_result = None
+
+
+def start_background_scrape():
+    """Start a full scrape in a background thread if not already running."""
+    global _scrape_running, _scrape_result
+    with _scrape_lock:
+        if _scrape_running:
+            return False
+        _scrape_running = True
+        _scrape_result = None
+
+    def _run():
+        global _scrape_running, _scrape_result
+        try:
+            _scrape_result = run_all_scrapers()
+        except Exception as e:
+            _scrape_result = {"error": str(e)}
+        finally:
+            with _scrape_lock:
+                _scrape_running = False
+
+    t = threading.Thread(target=_run, daemon=True)
+    t.start()
+    return True
 
 
 # ------------------------------------------------------------------
@@ -102,24 +127,8 @@ def update_status(offer_id):
 @app.route("/api/refresh", methods=["POST"])
 def refresh():
     """Trigger a full scrape in a background thread."""
-    global _scrape_running, _scrape_result
-
-    if _scrape_running:
+    if not start_background_scrape():
         return jsonify({"error": "Scrape already in progress"}), 409
-
-    def _run():
-        global _scrape_running, _scrape_result
-        try:
-            _scrape_result = run_all_scrapers()
-        except Exception as e:
-            _scrape_result = {"error": str(e)}
-        finally:
-            _scrape_running = False
-
-    _scrape_running = True
-    _scrape_result = None
-    t = threading.Thread(target=_run, daemon=True)
-    t.start()
 
     return jsonify({"ok": True, "message": "Scraping started"})
 
@@ -141,11 +150,32 @@ if __name__ == "__main__":
     config_path = os.path.join(os.path.dirname(__file__), "config.json")
     host = "127.0.0.1"
     port = 5000
+    open_browser = True
+    refresh_on_start = True
+
     if os.path.exists(config_path):
         with open(config_path, "r", encoding="utf-8") as f:
             cfg = json.load(f)
-            host = cfg.get("server", {}).get("host", host)
-            port = cfg.get("server", {}).get("port", port)
+            srv_cfg = cfg.get("server", {})
+            host = srv_cfg.get("host", host)
+            port = srv_cfg.get("port", port)
+            open_browser = srv_cfg.get("open_browser", open_browser)
+            refresh_on_start = srv_cfg.get("refresh_on_start", refresh_on_start)
 
-    print(f"Starting CIFRE PhD Tracker at http://{host}:{port}")
-    app.run(host=host, port=port, debug=True)
+    url = f"http://{host}:{port}"
+    print(f"Starting CIFRE PhD Tracker at {url}")
+
+    # Werkzeug reloader in debug mode runs this file twice (supervisor & worker).
+    # We only open the browser and trigger refresh in the main worker process.
+    debug_mode = True
+    is_main_worker = os.environ.get("WERKZEUG_RUN_MAIN") == "true" or not debug_mode
+
+    if is_main_worker:
+        if refresh_on_start:
+            print("Auto-refreshing offers in background...")
+            threading.Timer(0.8, start_background_scrape).start()
+        if open_browser:
+            print(f"Opening browser at {url}...")
+            threading.Timer(1.2, lambda: webbrowser.open(url)).start()
+
+    app.run(host=host, port=port, debug=debug_mode)

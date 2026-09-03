@@ -43,6 +43,16 @@ In the future I will update the resources so have a structured file
 
 - skip the companies that are already present in this file
 
+## AUBERT & DUVAL - https://www.aubertduval.com/carriere/offres-demplois/
+- filter by "Thèse – CIFRE" contract type (value "these-cifre-166763")
+
 ## LINKEDIN - https://www.linkedin.com/jobs/search/?currentJobId=4440509202&f_TPR=r604800&keywords=these%20cifre&origin=JOB_SEARCH_PAGE_JOB_FILTER
 - be sure to search in France
 - skip the companies that are already present in this file 
+
+## FRANCE TRAVAIL - https://candidat.francetravail.fr/offres/recherche?motsCles=cifre&offresPartenaires=true&range=0-19&rayon=10&tri=1
+- Extract `data-id-offer` (or `data-id-offre`) from `<li data-id-offer="..." class="result">`
+- Load more results via button under `.result-more` / `.results-more`
+- Fetch detail page `https://candidat.francetravail.fr/offres/recherche/detail/<id>`
+- Extract title from `itemprop="title"` and description from `itemprop="description"`
+- Skip companies that are already present in this file

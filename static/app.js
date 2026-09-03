@@ -12,6 +12,7 @@ const API = {
 const SOURCE_LABELS = {
     doctorat_gouv: 'Doctorat.gouv',
     safran: 'Safran',
+    aubertduval: 'Aubert & Duval',
     airbus: 'Airbus',
     renault: 'Renault',
     cea: 'CEA',
@@ -20,10 +21,12 @@ const SOURCE_LABELS = {
     thales: 'Thales',
     inria: 'INRIA',
     hellowork: 'HelloWork',
+    francetravail: 'France Travail',
 };
 
 let allOffers = [];
 let refreshPollInterval = null;
+let toastTimeout = null;
 
 // ------------------------------------------------------------------
 // Initialisation
@@ -31,6 +34,7 @@ let refreshPollInterval = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchOffers();
+    checkInitialScrapeStatus();
 });
 
 // ------------------------------------------------------------------
@@ -190,34 +194,57 @@ async function updateOfferStatus(offerId, newStatus) {
 }
 
 // ------------------------------------------------------------------
-// Refresh / Scraping
+// Refresh / Background Scraping
 // ------------------------------------------------------------------
+
+async function checkInitialScrapeStatus() {
+    try {
+        const resp = await fetch(API.status);
+        const data = await resp.json();
+        if (data.running) {
+            const btn = document.getElementById('btn-refresh');
+            if (btn) {
+                btn.classList.add('loading');
+                btn.disabled = true;
+            }
+            showToast('🔄 Scraping in progress in background...', 'info');
+            pollScrapeStatus();
+        }
+    } catch (err) {
+        console.error('Failed to check scrape status on load:', err);
+    }
+}
 
 async function triggerRefresh() {
     const btn = document.getElementById('btn-refresh');
-    const overlay = document.getElementById('refresh-overlay');
+    if (btn.classList.contains('loading') || btn.disabled) {
+        return;
+    }
 
     btn.classList.add('loading');
-    overlay.classList.remove('hidden');
+    btn.disabled = true;
 
     try {
         const resp = await fetch(API.refresh, { method: 'POST' });
         const data = await resp.json();
 
         if (resp.status === 409) {
-            showToast('A scrape is already running', 'error');
-            overlay.classList.add('hidden');
-            btn.classList.remove('loading');
+            showToast('🔄 Scraping is already running in background...', 'info');
+            pollScrapeStatus();
             return;
         }
 
-        // Poll for completion
+        if (!resp.ok) {
+            throw new Error(data.error || 'Refresh failed');
+        }
+
+        showToast('🔄 Scraping started in background... You can continue using the site.', 'info');
         pollScrapeStatus();
     } catch (err) {
         console.error('Refresh failed:', err);
         showToast('Failed to start scraping', 'error');
-        overlay.classList.add('hidden');
         btn.classList.remove('loading');
+        btn.disabled = false;
     }
 }
 
@@ -233,26 +260,29 @@ function pollScrapeStatus() {
                 clearInterval(refreshPollInterval);
                 refreshPollInterval = null;
 
-                const overlay = document.getElementById('refresh-overlay');
                 const btn = document.getElementById('btn-refresh');
-                overlay.classList.add('hidden');
-                btn.classList.remove('loading');
+                if (btn) {
+                    btn.classList.remove('loading');
+                    btn.disabled = false;
+                }
 
                 if (data.result) {
                     if (data.result.error) {
-                        showToast(`Scraping error: ${data.result.error}`, 'error');
+                        showToast(`Scraping finished with error: ${data.result.error}`, 'error');
                     } else {
-                        const msg = `Scraping complete: ${data.result.new || 0} new offers found`;
-                        showToast(msg, 'success');
+                        const newCount = data.result.new || 0;
+                        const removedCount = data.result.removed || 0;
+                        let msg = `Scraping finished: ${newCount} new offer(s)`;
+                        if (removedCount > 0) msg += `, ${removedCount} expired removed`;
+                        showToast(msg, newCount > 0 ? 'success' : 'info');
+                        fetchOffers();
                     }
                 }
-
-                fetchOffers();
             }
         } catch (err) {
-            console.error('Poll failed:', err);
+            console.error('Poll status failed:', err);
         }
-    }, 3000);
+    }, 2500);
 }
 
 // ------------------------------------------------------------------
@@ -290,13 +320,16 @@ function updateScrapeInfo(lastScrape) {
 
 function showToast(message, type = 'success') {
     const toast = document.getElementById('toast');
+    if (!toast) return;
+
     toast.textContent = message;
     toast.className = `toast ${type}`;
+    toast.classList.remove('hidden');
 
-    // Auto-hide after 4s
-    setTimeout(() => {
+    if (toastTimeout) clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
         toast.classList.add('hidden');
-    }, 4000);
+    }, 4500);
 }
 
 // ------------------------------------------------------------------

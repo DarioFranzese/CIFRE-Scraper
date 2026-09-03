@@ -66,6 +66,11 @@ class HelloWorkScraper(BaseScraper):
                 if company_el:
                     company = self._clean(company_el.get_text())
 
+            # Skip companies that are scraped directly
+            skip_companies = [c.lower() for c in self.config.get("skip_companies_on_aggregators", [])]
+            if company and any(skip in company.lower() for skip in skip_companies):
+                continue
+
             # Extract job detail link
             link = ""
             link_el = card.select_one('a[href*="/fr-fr/emplois/"]') or card.select_one('a[href*="/fr-fr/emploi/"]') or card.select_one('a[data-cy="offerTitle"]')

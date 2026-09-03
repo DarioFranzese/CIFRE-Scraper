@@ -11,14 +11,16 @@ A robust, multi-source scraping orchestrator and management dashboard designed t
 
 ## 🚀 Key Features
 
-* **10 Automated Multi-Source Scrapers**:
+* **12 Automated Multi-Source Scrapers**:
   * 🏛️ **Doctorat.gouv.fr**: Official French national PhD portal crawler (Playwright search & details parser).
   * ⚡ **EDF**: Custom WebKit browser rendering bypass for Akamai WAF protection.
   * ✈️ **Safran**: Playwright stealth mode bypass for Cloudflare anti-bot security.
+  * 🏭 **Aubert & Duval**: Form POST filtering for specific contract types ("Thèse – CIFRE").
   * ⚛️ **CEA**: ASP.NET WebForms session tracking and query pagination.
   * 🌐 **Airbus & Renault**: Direct Workday REST API search integrations.
   * 📡 **Orange, Thales, INRIA**: Specialized corporate and research job board scrapers.
   * 🔍 **HelloWork**: Aggregator scraping with automated duplicate suppression.
+  * 💼 **France Travail**: National employment portal with dynamic Playwright pagination & microdata extraction.
 * **Smart Filtering & Deduplication**:
   * Deterministic SHA-256 offer hashing to prevent duplicate entries across scrapes.
   * Configurable filtering rules (allowed tags, required title keywords, date ranges).
@@ -47,6 +49,7 @@ cifre_scraper/
 │   ├── base.py           # Abstract BaseScraper class
 │   ├── doctorat_gouv.py  # Doctorat.gouv.fr scraper
 │   ├── safran.py         # Safran careers scraper
+│   ├── aubertduval.py    # Aubert & Duval careers scraper
 │   ├── airbus.py         # Airbus Workday API scraper
 │   ├── renault.py        # Renault Workday API scraper
 │   ├── cea.py            # CEA ASP.NET scraper
@@ -54,7 +57,8 @@ cifre_scraper/
 │   ├── orange.py         # Orange API scraper
 │   ├── thales.py         # Thales scraper
 │   ├── inria.py          # INRIA scraper
-│   └── hellowork.py      # HelloWork aggregator scraper
+│   ├── hellowork.py      # HelloWork aggregator scraper
+│   └── francetravail.py  # France Travail scraper
 └── static/               # Frontend web app assets
     ├── index.html        # Web dashboard layout
     ├── style.css         # Custom CSS theme

@@ -20,6 +20,7 @@ classDiagram
     }
     class DoctoratGouvScraper { +SOURCE_NAME: "doctorat_gouv" }
     class SafranScraper { +SOURCE_NAME: "safran" }
+    class AubertDuvalScraper { +SOURCE_NAME: "aubertduval" }
     class AirbusScraper { +SOURCE_NAME: "airbus" }
     class RenaultScraper { +SOURCE_NAME: "renault" }
     class CEAScraper { +SOURCE_NAME: "cea" }
@@ -28,9 +29,11 @@ classDiagram
     class ThalesScraper { +SOURCE_NAME: "thales" }
     class INRIAScraper { +SOURCE_NAME: "inria" }
     class HelloWorkScraper { +SOURCE_NAME: "hellowork" }
+    class FranceTravailScraper { +SOURCE_NAME: "francetravail" }
 
     BaseScraper <|-- DoctoratGouvScraper
     BaseScraper <|-- SafranScraper
+    BaseScraper <|-- AubertDuvalScraper
     BaseScraper <|-- AirbusScraper
     BaseScraper <|-- RenaultScraper
     BaseScraper <|-- CEAScraper
@@ -39,6 +42,7 @@ classDiagram
     BaseScraper <|-- ThalesScraper
     BaseScraper <|-- INRIAScraper
     BaseScraper <|-- HelloWorkScraper
+    BaseScraper <|-- FranceTravailScraper
 ```
 
 ### BaseScraper Workflow
@@ -57,6 +61,7 @@ classDiagram
 |---|---|---|---|
 | `doctorat_gouv` | [`doctorat_gouv.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/doctorat_gouv.py) | **Doctorat.gouv.fr** (French National PhD Portal) | Playwright headless browser navigation & detailed proposal page parsing. |
 | `safran` | [`safran.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/safran.py) | **Safran Group Careers** | Playwright with stealth evasions to bypass Cloudflare protection. |
+| `aubertduval` | [`aubertduval.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/aubertduval.py) | **Aubert & Duval** | Form POST filtering for specific contract types ("Thèse – CIFRE"). |
 | `airbus` | [`airbus.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/airbus.py) | **Airbus Careers** | Direct REST requests to Airbus Workday JSON endpoints. |
 | `renault` | [`renault.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/renault.py) | **Renault Group Careers** | Direct REST requests to Alliance Workday JSON endpoints. |
 | `cea` | [`cea.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/cea.py) | **CEA (Commissariat à l'Énergie Atomique)** | ASP.NET WebForms session tracking & BeautifulSoup HTML parsing. |
@@ -65,6 +70,7 @@ classDiagram
 | `thales` | [`thales.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/thales.py) | **Thales Group** | Workday / career portal API query integration. |
 | `inria` | [`inria.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/inria.py) | **INRIA (Institut National de Recherche en Informatique)** | HTML scraping targeting CIFRE tagged scientific position postings. |
 | `hellowork` | [`hellowork.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/hellowork.py) | **HelloWork Aggregator** | HTML search parsing with filtering to ignore offers from directly scraped companies. |
+| `francetravail` | [`francetravail.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/francetravail.py) | **France Travail (Pôle Emploi)** | Playwright dynamic pagination & microdata detail extraction (`itemprop`). |
 
 ---
 

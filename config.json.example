@@ -18,11 +18,20 @@
   "inria": {
     "keyword": "CIFRE"
   },
+  "aubertduval": {
+    "contrat": "these-cifre-166763"
+  },
+  "francetravail": {
+    "search_url": "https://candidat.francetravail.fr/offres/recherche?motsCles=cifre&offresPartenaires=true&range=0-19&rayon=10&tri=1",
+    "max_pagination_clicks": 10
+  },
   "skip_companies_on_aggregators": [
-    "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA"
+    "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval"
   ],
   "server": {
     "host": "127.0.0.1",
-    "port": 5000
+    "port": 5000,
+    "open_browser": true,
+    "refresh_on_start": true
   }
 }

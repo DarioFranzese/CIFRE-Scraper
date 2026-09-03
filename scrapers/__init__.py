@@ -9,17 +9,22 @@ from scrapers.safran import SafranScraper
 from scrapers.airbus import AirbusScraper
 from scrapers.renault import RenaultScraper
 from scrapers.edf import EDFScraper
+from scrapers.aubertduval import AubertDuvalScraper
+from scrapers.francetravail import FranceTravailScraper
 
 ALL_SCRAPERS = [
     OrangeScraper,
     ThalesScraper,
     CEAScraper,
     INRIAScraper,
-    HelloWorkScraper,
     DoctoratGouvScraper,
     SafranScraper,
     AirbusScraper,
     RenaultScraper,
     EDFScraper,
+    AubertDuvalScraper,
+    HelloWorkScraper,
+    FranceTravailScraper,
 ]
+
 
