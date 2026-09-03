@@ -56,3 +56,11 @@ In the future I will update the resources so have a structured file
 - Fetch detail page `https://candidat.francetravail.fr/offres/recherche/detail/<id>`
 - Extract title from `itemprop="title"` and description from `itemprop="description"`
 - Skip companies that are already present in this file
+
+## ASSOCIATION BERNARD GREGORY - https://www.abg.asso.fr/fr/candidatOffres
+- Search input `name="criteria[mot_cle]"` with keyword "CIFRE"
+- Trigger search via `#monBoutonSubmit` / `#monBoutonReset`
+- Offers are in `.item.it_offre`
+- Extract title, company, description, and link from `.titre_logo a` and detail page
+- Pagination via AJAX on `.resultats.clearfix .pager_suiv a`
+- Skip companies that are already present in this file

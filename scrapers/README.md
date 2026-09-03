@@ -30,6 +30,7 @@ classDiagram
     class INRIAScraper { +SOURCE_NAME: "inria" }
     class HelloWorkScraper { +SOURCE_NAME: "hellowork" }
     class FranceTravailScraper { +SOURCE_NAME: "francetravail" }
+    class ABGScraper { +SOURCE_NAME: "abg" }
 
     BaseScraper <|-- DoctoratGouvScraper
     BaseScraper <|-- SafranScraper
@@ -43,6 +44,7 @@ classDiagram
     BaseScraper <|-- INRIAScraper
     BaseScraper <|-- HelloWorkScraper
     BaseScraper <|-- FranceTravailScraper
+    BaseScraper <|-- ABGScraper
 ```
 
 ### BaseScraper Workflow
@@ -71,17 +73,18 @@ classDiagram
 | `inria` | [`inria.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/inria.py) | **INRIA (Institut National de Recherche en Informatique)** | HTML scraping targeting CIFRE tagged scientific position postings. |
 | `hellowork` | [`hellowork.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/hellowork.py) | **HelloWork Aggregator** | HTML search parsing with filtering to ignore offers from directly scraped companies. |
 | `francetravail` | [`francetravail.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/francetravail.py) | **France Travail (Pôle Emploi)** | Playwright dynamic pagination & microdata detail extraction (`itemprop`). |
+| `abg` | [`abg.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/abg.py) | **Association Bernard Gregory (ABG)** | Playwright Prototype.js AJAX pagination & multi-section detail extraction. |
 
 ---
 
 ## ⚡ Smart Features & Optimization Strategies
 
 ### 1. Anti-Duplication via Aggregator Filtering
-Aggregators like **HelloWork** often repost offers from direct company sites (e.g. Airbus, Safran, Thales). To prevent duplicate cards in the database, aggregator scrapers consult `skip_companies_on_aggregators` in `config.json`:
+Aggregators like **HelloWork** and **France Travail** often repost offers from direct company sites (e.g. Airbus, Safran, Thales). To prevent duplicate cards in the database, aggregator scrapers consult `skip_companies_on_aggregators` in `config.json`:
 
 ```json
 "skip_companies_on_aggregators": [
-  "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria"
+  "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval"
 ]
 ```
 If an offer's company matches an entry in this list, the aggregator scraper discards it automatically.

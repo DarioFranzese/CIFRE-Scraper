@@ -11,7 +11,7 @@ A robust, multi-source scraping orchestrator and management dashboard designed t
 
 ## 🚀 Key Features
 
-* **12 Automated Multi-Source Scrapers**:
+* **13 Automated Multi-Source Scrapers**:
   * 🏛️ **Doctorat.gouv.fr**: Official French national PhD portal crawler (Playwright search & details parser).
   * ⚡ **EDF**: Custom WebKit browser rendering bypass for Akamai WAF protection.
   * ✈️ **Safran**: Playwright stealth mode bypass for Cloudflare anti-bot security.
@@ -21,6 +21,7 @@ A robust, multi-source scraping orchestrator and management dashboard designed t
   * 📡 **Orange, Thales, INRIA**: Specialized corporate and research job board scrapers.
   * 🔍 **HelloWork**: Aggregator scraping with automated duplicate suppression.
   * 💼 **France Travail**: National employment portal with dynamic Playwright pagination & microdata extraction.
+  * 🎓 **Association Bernard Gregory (ABG)**: Prototype.js dynamic AJAX search & pagination with rich thesis proposal details.
 * **Smart Filtering & Deduplication**:
   * Deterministic SHA-256 offer hashing to prevent duplicate entries across scrapes.
   * Configurable filtering rules (allowed tags, required title keywords, date ranges).
@@ -58,7 +59,8 @@ cifre_scraper/
 │   ├── thales.py         # Thales scraper
 │   ├── inria.py          # INRIA scraper
 │   ├── hellowork.py      # HelloWork aggregator scraper
-│   └── francetravail.py  # France Travail scraper
+│   ├── francetravail.py  # France Travail scraper
+│   └── abg.py            # Association Bernard Gregory (ABG) scraper
 └── static/               # Frontend web app assets
     ├── index.html        # Web dashboard layout
     ├── style.css         # Custom CSS theme

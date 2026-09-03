@@ -55,7 +55,7 @@ Each object in the `offers` array follows this schema:
 | `company` | `string` | Yes | Name of the hiring company or research organization. |
 | `description` | `string` | Yes | Text excerpt, location, mission statement, or department info. |
 | `link` | `string` | Yes | Direct URL to the original offer posting. |
-| `source` | `string` | Yes | Identifier of the scraper module (e.g., `doctorat_gouv`, `safran`, `airbus`). |
+| `source` | `string` | Yes | Identifier of the scraper module (`doctorat_gouv`, `safran`, `aubertduval`, `airbus`, `renault`, `cea`, `edf`, `orange`, `thales`, `inria`, `hellowork`, `francetravail`). |
 | `date_found` | `string` | Yes | YYYY-MM-DD date when the offer was first recorded by the system. |
 | `status` | `string` | Yes | User tracking status. Must be one of the lifecycle states detailed below. |
 

@@ -22,6 +22,7 @@ const SOURCE_LABELS = {
     inria: 'INRIA',
     hellowork: 'HelloWork',
     francetravail: 'France Travail',
+    abg: 'Association Bernard Gregory (ABG)',
 };
 
 let allOffers = [];

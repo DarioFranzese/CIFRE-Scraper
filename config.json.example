@@ -25,6 +25,11 @@
     "search_url": "https://candidat.francetravail.fr/offres/recherche?motsCles=cifre&offresPartenaires=true&range=0-19&rayon=10&tri=1",
     "max_pagination_clicks": 10
   },
+  "abg": {
+    "keyword": "CIFRE",
+    "search_url": "https://www.abg.asso.fr/fr/candidatOffres",
+    "max_pages": 10
+  },
   "skip_companies_on_aggregators": [
     "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval"
   ],

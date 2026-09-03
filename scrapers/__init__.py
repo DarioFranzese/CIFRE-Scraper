@@ -11,6 +11,7 @@ from scrapers.renault import RenaultScraper
 from scrapers.edf import EDFScraper
 from scrapers.aubertduval import AubertDuvalScraper
 from scrapers.francetravail import FranceTravailScraper
+from scrapers.abg import ABGScraper
 
 ALL_SCRAPERS = [
     OrangeScraper,
@@ -25,6 +26,7 @@ ALL_SCRAPERS = [
     AubertDuvalScraper,
     HelloWorkScraper,
     FranceTravailScraper,
+    ABGScraper,
 ]
 
 
