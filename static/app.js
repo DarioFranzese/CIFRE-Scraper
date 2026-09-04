@@ -23,6 +23,7 @@ const SOURCE_LABELS = {
     hellowork: 'HelloWork',
     francetravail: 'France Travail',
     abg: 'Association Bernard Gregory (ABG)',
+    stmicroelectronics: 'STMicroelectronics',
 };
 
 let allOffers = [];

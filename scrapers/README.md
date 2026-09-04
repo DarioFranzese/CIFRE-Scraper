@@ -31,6 +31,7 @@ classDiagram
     class HelloWorkScraper { +SOURCE_NAME: "hellowork" }
     class FranceTravailScraper { +SOURCE_NAME: "francetravail" }
     class ABGScraper { +SOURCE_NAME: "abg" }
+    class STMicroelectronicsScraper { +SOURCE_NAME: "stmicroelectronics" }
 
     BaseScraper <|-- DoctoratGouvScraper
     BaseScraper <|-- SafranScraper
@@ -45,6 +46,7 @@ classDiagram
     BaseScraper <|-- HelloWorkScraper
     BaseScraper <|-- FranceTravailScraper
     BaseScraper <|-- ABGScraper
+    BaseScraper <|-- STMicroelectronicsScraper
 ```
 
 ### BaseScraper Workflow
@@ -74,6 +76,7 @@ classDiagram
 | `hellowork` | [`hellowork.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/hellowork.py) | **HelloWork Aggregator** | HTML search parsing with filtering to ignore offers from directly scraped companies. |
 | `francetravail` | [`francetravail.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/francetravail.py) | **France Travail (Pôle Emploi)** | Playwright dynamic pagination & microdata detail extraction (`itemprop`). |
 | `abg` | [`abg.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/abg.py) | **Association Bernard Gregory (ABG)** | Playwright Prototype.js AJAX pagination & multi-section detail extraction. |
+| `stmicroelectronics` | [`stmicroelectronics.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/stmicroelectronics.py) | **STMicroelectronics** | Playwright dynamic pagination (`show-more`) and card click side-panel detail parsing. |
 
 ---
 

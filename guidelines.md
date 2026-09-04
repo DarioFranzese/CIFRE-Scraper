@@ -64,3 +64,9 @@ In the future I will update the resources so have a structured file
 - Extract title, company, description, and link from `.titre_logo a` and detail page
 - Pagination via AJAX on `.resultats.clearfix .pager_suiv a`
 - Skip companies that are already present in this file
+
+## STMICROELECTRONICS - https://stmicroelectronics.eightfold.ai/careers?query=CIFRE&location=France&pid=563637171228634&domain=stmicroelectronics.com&sort_by=relevance
+- List of positions with `.card.position-card` (selected: `.card-selected`)
+- Simulate click on `.show-more-positions` first to load all available positions
+- Simulate click on each card to load side details inside `.position-container`
+- Extract title, company (STMicroelectronics), link with PID, and description under `.position-job-description` preserving formatting across nested divs

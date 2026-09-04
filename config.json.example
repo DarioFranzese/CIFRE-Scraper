@@ -30,8 +30,11 @@
     "search_url": "https://www.abg.asso.fr/fr/candidatOffres",
     "max_pages": 10
   },
+  "stmicroelectronics": {
+    "url": "https://stmicroelectronics.eightfold.ai/careers?query=CIFRE&location=France&pid=563637171228634&domain=stmicroelectronics.com&sort_by=relevance"
+  },
   "skip_companies_on_aggregators": [
-    "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval"
+    "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval", "STMicroelectronics", "ST Microelectronics"
   ],
   "server": {
     "host": "127.0.0.1",
