@@ -13,6 +13,7 @@ from scrapers.aubertduval import AubertDuvalScraper
 from scrapers.francetravail import FranceTravailScraper
 from scrapers.abg import ABGScraper
 from scrapers.stmicroelectronics import STMicroelectronicsScraper
+from scrapers.campusfrance import CampusFranceScraper
 
 ALL_SCRAPERS = [
     OrangeScraper,
@@ -29,6 +30,7 @@ ALL_SCRAPERS = [
     FranceTravailScraper,
     ABGScraper,
     STMicroelectronicsScraper,
+    CampusFranceScraper,
 ]
 
 

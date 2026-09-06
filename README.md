@@ -11,8 +11,9 @@ A robust, multi-source scraping orchestrator and management dashboard designed t
 
 ## 🚀 Key Features
 
-* **14 Automated Multi-Source Scrapers**:
+* **15 Automated Multi-Source Scrapers**:
   * 🏛️ **Doctorat.gouv.fr**: Official French national PhD portal crawler (Playwright search & details parser).
+  * 🇫🇷 **Campus France**: "La Recherche en France" portal scraper with interactive accordion funding filters and DataTables full-result expansion.
   * ⚡ **EDF**: Custom WebKit browser rendering bypass for Akamai WAF protection.
   * ✈️ **Safran**: Playwright stealth mode bypass for Cloudflare anti-bot security.
   * 🏭 **Aubert & Duval**: Form POST filtering for specific contract types ("Thèse – CIFRE").
@@ -50,6 +51,7 @@ cifre_scraper/
 │   ├── README.md         # Scraper architecture & developer guide
 │   ├── base.py           # Abstract BaseScraper class
 │   ├── doctorat_gouv.py  # Doctorat.gouv.fr scraper
+│   ├── campusfrance.py   # Campus France scraper
 │   ├── safran.py         # Safran careers scraper
 │   ├── aubertduval.py    # Aubert & Duval careers scraper
 │   ├── airbus.py         # Airbus Workday API scraper

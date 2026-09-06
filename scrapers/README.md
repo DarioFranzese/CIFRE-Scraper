@@ -32,8 +32,10 @@ classDiagram
     class FranceTravailScraper { +SOURCE_NAME: "francetravail" }
     class ABGScraper { +SOURCE_NAME: "abg" }
     class STMicroelectronicsScraper { +SOURCE_NAME: "stmicroelectronics" }
+    class CampusFranceScraper { +SOURCE_NAME: "campusfrance" }
 
     BaseScraper <|-- DoctoratGouvScraper
+    BaseScraper <|-- CampusFranceScraper
     BaseScraper <|-- SafranScraper
     BaseScraper <|-- AubertDuvalScraper
     BaseScraper <|-- AirbusScraper
@@ -64,6 +66,7 @@ classDiagram
 | Source ID | Scraper File | Target Portal / Organization | Tech Stack / Bypass Strategy |
 |---|---|---|---|
 | `doctorat_gouv` | [`doctorat_gouv.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/doctorat_gouv.py) | **Doctorat.gouv.fr** (French National PhD Portal) | Playwright headless browser navigation & detailed proposal page parsing. |
+| `campusfrance` | [`campusfrance.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/campusfrance.py) | **Campus France** (La Recherche en France) | Playwright interactive filter expansion (`Financement` -> `cifre`), DataTables page length expansion (`250`), and proposal detail scraping. |
 | `safran` | [`safran.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/safran.py) | **Safran Group Careers** | Playwright with stealth evasions to bypass Cloudflare protection. |
 | `aubertduval` | [`aubertduval.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/aubertduval.py) | **Aubert & Duval** | Form POST filtering for specific contract types ("Thèse – CIFRE"). |
 | `airbus` | [`airbus.py`](file:///c:/Users/Dario/Desktop/Dario/Progetti/cifre_scraper/scrapers/airbus.py) | **Airbus Careers** | Direct REST requests to Airbus Workday JSON endpoints. |

@@ -33,6 +33,9 @@
   "stmicroelectronics": {
     "url": "https://stmicroelectronics.eightfold.ai/careers?query=CIFRE&location=France&pid=563637171228634&domain=stmicroelectronics.com&sort_by=relevance"
   },
+  "campusfrance": {
+    "search_url": "https://recherche-recette.campusfrance.org/phd/offers"
+  },
   "skip_companies_on_aggregators": [
     "Safran", "Airbus", "Renault", "CEA", "EDF", "Orange", "Thales", "Inria", "INRIA", "Aubert & Duval", "AubertDuval", "STMicroelectronics", "ST Microelectronics"
   ],
